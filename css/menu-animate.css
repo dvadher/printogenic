@@ -1,0 +1,394 @@
+.navbar li a {
+  margin: 0px 20px;
+}
+/* style one 
+add flip-menu-text in your ul and also add data-hover="About Us" in your li  */
+.flip-menu-text * {
+  box-sizing: border-box ;
+  -webkit-transition: all 0.35s ease ;
+  transition: all 0.35s ease ;
+}
+.flip-menu-text li {
+  display: inline-block ;
+  list-style: outside none none ;
+  overflow: hidden ;
+}
+.flip-menu-text a {
+  padding: 0.3em 0 ;
+  color: rgba(255, 255, 255, 0.5) ;
+  position: relative ;
+  display: inline-block ;
+  letter-spacing: 1px ;
+  margin: 0 ;
+  text-decoration: none ;
+}
+.flip-menu-text a:before,
+.flip-menu-text a:after {
+  position: absolute ;
+  -webkit-transition: all 0.35s ease ;
+  transition: all 0.35s ease ;
+}
+.flip-menu-text a:before {
+  bottom: 100% !important;
+  display: block !important;
+  height: 3px !important;
+  width: 100% !important;
+  content: "" !important;
+  background-color: #994fff  !important;
+}
+.flip-menu-text a:after {
+  padding: 0.3em 0 ;
+  position: absolute ;
+  bottom: 100% ;
+  left: 0 ;
+  content: attr(data-hover) ;
+  color: white;
+  white-space: nowrap ;
+}
+.flip-menu-text li:hover a,
+.flip-menu-text .current a {
+  transform: translateY(100%);
+}
+/* style one 
+add flip-menu-text in your ul and also add data-hover="About Us" in your li  */
+
+/* style two 
+add menu-line-animate */
+.menu-line-animate * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-line-animate li {
+  display: inline-block;
+  list-style: outside none none;
+  padding: 0;
+}
+.menu-line-animate a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu-line-animate a:before,
+.menu-line-animate a:after {
+  height: 2px  !important;
+  position: absolute  !important;
+  content: '';
+  -webkit-transition: all 0.35s ease  !important;
+  transition: all 0.35s ease  !important;
+  background-color: #994fff  !important;
+  width: 0  !important;
+}
+.menu-line-animate a:before {
+  top: 0  !important;
+  left: 0  !important;
+}
+.menu-line-animate a:after {
+  bottom: 0  !important;
+  right: 0  !important;
+}
+.menu-line-animate a:hover,
+.menu-line-animate .current a {
+  color: #ffffff;
+}
+.menu-line-animate a:hover:before,
+.menu-line-animate .current a:before,
+.menu-line-animate a:hover:after,
+.menu-line-animate .current a:after {
+  width: 100%  !important;
+}
+/* style two 
+add menu-line-animate in your ul */
+
+/* style three 
+add menu-line-animate in your ul */
+.line-x-animate {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.line-x-animate * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.line-x-animate li {
+  display: inline-block;
+  list-style: outside none none;
+  padding: 0;
+}
+.line-x-animate a {
+  padding: 0 0.7em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.line-x-animate a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  left: 15%;
+  right: 15%;
+  top: 0;
+  bottom: 0;
+  border-left: 3px solid #994fff;
+  border-right: 3px solid #994fff;
+}
+.line-x-animate a:hover,
+.line-x-animate .current a {
+  color: #ffffff;
+}
+.line-x-animate a:hover:before,
+.line-x-animate .current a:before {
+  opacity: 1;
+  left: 0;
+  right: 0;
+}
+/* style three 
+add menu-line-animate in your ul */
+
+
+/* style four 
+add menu-line-animate in your ul */
+.piramid-curve * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.piramid-curve li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.piramid-curve a {
+  padding: 0.5em 0.8em;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.piramid-curve a:before,
+.piramid-curve a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.piramid-curve a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #994fff;
+  border-top: 3px solid #994fff;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.piramid-curve a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #994fff;
+  border-bottom: 3px solid #994fff;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.piramid-curve a:hover,
+.piramid-curve .current a {
+  color: #ffffff;
+}
+.piramid-curve a:hover:before,
+.piramid-curve .current a:before,
+.piramid-curve a:hover:after,
+.piramid-curve .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+/* style four 
+add menu-line-animate in your ul */
+
+
+/* style five 
+add menu-line-animate in your ul */
+
+.snip1168 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.snip1168 * {
+  box-sizing: border-box;
+}
+.snip1168 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.snip1168 a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1168 a:before,
+.snip1168 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1168 a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #994fff;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.snip1168 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1168 a:hover:before,
+.snip1168 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1168 a:hover:after,
+.snip1168 .current a:after {
+  max-width: 100%;
+}
+
+/* style five 
+add menu-line-animate in your ul */
+
+/* style six 
+add menu-line-animate in your ul */
+
+.line-x-vertical-animate * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.line-x-vertical-animate li {
+  display: inline-block;
+  list-style: outside none none;
+  padding: 0;
+}
+.line-x-vertical-animate a {
+  display: inline-block;
+  padding: 0.5em 17px;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.line-x-vertical-animate a:before {
+  left: 20%;
+  right: 20%;
+  top: 50%;
+  content: '';
+  border-left: 12px solid #9b59b6;
+  border-right: 12px solid #9b59b6;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.line-x-vertical-animate a:hover,
+.line-x-vertical-animate .current a {
+  color: #ffffff;
+}
+.line-x-vertical-animate a:hover:before,
+.line-x-vertical-animate .current a:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+/* style six 
+add menu-line-animate in your ul */
+
+/* style seven 
+add menu-line-animate in your ul */
+.snip1135 * {
+  box-sizing: border-box;
+}
+.snip1135 li {
+  display: inline-block;
+  list-style: outside none none;
+}
+.snip1135 a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1135 a:before,
+.snip1135 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1135 a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #9b59b6;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.snip1135 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+  max-width: 100%;
+}
+/* style seven 
+add menu-line-animate in your ul */
+
